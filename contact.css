@@ -7,7 +7,7 @@
 
 html, body{
     width: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden; /* ✅ FIX: right blank space issue */
 }
 
 body{
@@ -26,7 +26,7 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* ✅ FIX */
 }
 
 .logo{
@@ -39,7 +39,7 @@ nav ul{
     display:flex;
     list-style:none;
     gap:30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* ✅ FIX */
 }
 
 nav a{
@@ -98,7 +98,7 @@ nav a:hover{
 
 
 .contact-container{
-    display: grid; /* ✅ BEST FIX (flex → grid) */
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     padding: 80px 8%;
@@ -252,7 +252,6 @@ footer{
         padding: 40px 5%;
     }
 
-  
     .cta{
         padding: 60px 20px;
     }
@@ -277,5 +276,30 @@ footer{
     footer{
         font-size: 13px;
         padding: 15px;
+    }
+}
+
+
+/* Extra small screens (~400px and below) */
+@media (max-width: 480px){
+    header{
+        padding: 10px 4%;
+    }
+
+    .logo{
+        font-size: 16px;
+    }
+
+    nav ul{
+        gap: 6px;
+    }
+
+    nav a{
+        font-size: 11px;
+    }
+
+    .btn{
+        padding: 6px 10px;
+        font-size: 11px;
     }
 }

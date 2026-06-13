@@ -25,13 +25,11 @@ header{
     font-weight:bold;
     color:#4f46e5;
 }
-
 nav ul{
     display:flex;
     list-style:none;
     gap:30px;
 }
-
 nav a{
     text-decoration:none;
     color:#222;
@@ -41,7 +39,6 @@ nav a{
 nav a:hover{
     color:#4f46e5;
 }
-
 .btn{
     background:#4f46e5;
     color:#fff;
@@ -80,7 +77,7 @@ nav a:hover{
     font-size:18px;
 }
 
-/* WHO WE ARE */
+/* ABOUT */
 .about-section{
     display:flex;
     align-items:center;
@@ -88,29 +85,24 @@ nav a:hover{
     padding:80px 8%;
     flex-wrap:wrap;
 }
-
 .about-image{
     flex:1;
     min-width:300px;
 }
-
 .about-image img{
     width:100%;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
-
 .about-text{
     flex:1;
     min-width:300px;
 }
-
 .about-text h2{
     font-size:30px;
     color:#111827;
     margin-bottom:10px;
 }
-
 .about-text .underline{
     width:60px;
     height:4px;
@@ -118,17 +110,108 @@ nav a:hover{
     margin-bottom:20px;
     border-radius:2px;
 }
-
 .about-text p{
     color:#555;
     font-size:16px;
     margin-bottom:15px;
 }
-
 .about-text .check{
     color:#111827;
     font-weight:500;
     margin-bottom:10px;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+    display:flex;
+    gap:30px;
+    padding:80px 8%;
+    flex-wrap:wrap;
+    justify-content:center;
+    background:#fff;
+}
+.card{
+    flex:1;
+    min-width:280px;
+    max-width:350px;
+    background:#f5f3ff;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.06);
+}
+.card img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+.card h3{
+    color:#111827;
+    margin-bottom:10px;
+}
+.card p{
+    color:#555;
+    font-size:15px;
+}
+
+/* WHY US */
+.why-us{
+    text-align:center;
+    padding:80px 8%;
+    background:#f9fafb;
+}
+.why-us h2{
+    font-size:30px;
+    color:#111827;
+    margin-bottom:40px;
+}
+.features{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.feature{
+    flex:1;
+    min-width:250px;
+    max-width:320px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.06);
+}
+.feature h3{
+    color:#111827;
+    margin-bottom:10px;
+}
+.feature p{
+    color:#555;
+    font-size:15px;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    padding:80px 8%;
+    background:#4f46e5;
+    color:#fff;
+}
+.cta h2{
+    font-size:28px;
+    margin-bottom:15px;
+}
+.cta p{
+    margin-bottom:25px;
+    color:#e0e0ff;
+}
+.cta .btn{
+    background:#fff;
+    color:#4f46e5;
+}
+.cta .btn:hover{
+    background:#f0f0f0;
 }
 
 /* FOOTER */
@@ -147,27 +230,22 @@ footer{
         padding:15px 5%;
         flex-wrap:nowrap;
     }
-
     .logo{
         font-size:20px;
     }
-
     nav ul{
         gap:12px;
         flex-wrap:nowrap;
     }
-
     nav a{
         font-size:13px;
         white-space:nowrap;
     }
-
     .btn{
         padding:8px 14px;
         font-size:13px;
         white-space:nowrap;
     }
-
     .hero{
         padding:60px 20px;
     }
@@ -177,14 +255,22 @@ footer{
     .hero p{
         font-size:16px;
     }
-
     .about-section{
         flex-direction:column;
         padding:40px 5%;
         gap:30px;
     }
+    .testimonials{
+        padding:40px 5%;
+    }
+    .card{
+        min-width:100%;
+    }
+    .features{
+        flex-direction:column;
+        align-items:center;
+    }
 }
-
 @media(max-width:480px){
     header{
         padding:10px 4%;
@@ -202,4 +288,4 @@ footer{
         padding:6px 10px;
         font-size:11px;
     }
-}
+}    

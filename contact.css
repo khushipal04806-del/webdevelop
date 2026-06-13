@@ -16,7 +16,6 @@ body{
     line-height:1.6;
 }
 
-/* HEADER */
 header{
     display:flex;
     justify-content:space-between;
@@ -53,7 +52,7 @@ nav a:hover{
     color:#4f46e5;
 }
 
-/* BUTTON */
+
 .btn{
     background:#4f46e5;
     color:#fff;
@@ -97,7 +96,7 @@ nav a:hover{
     font-size:18px;
 }
 
-/* CONTACT */
+
 .contact-container{
     display: grid; /* ✅ BEST FIX (flex → grid) */
     grid-template-columns: repeat(2, 1fr);
@@ -212,9 +211,7 @@ footer{
     font-size: 14px;
 }
 
-/* =======================
-   📱 MOBILE RESPONSIVE
-======================= */
+
 @media (max-width: 768px){
 
     /* NAV FIX */
@@ -231,7 +228,7 @@ footer{
         justify-content: center;
     }
 
-    /* HERO */
+   
     .hero h1{
         font-size: 32px;
     }

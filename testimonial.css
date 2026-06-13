@@ -26,16 +26,6 @@ header{
     color:#4f46e5;
 }
 
-/* Hamburger - desktop pe hidden */
-.menu-toggle{
-    display:none;
-    font-size:26px;
-    cursor:pointer;
-    background:none;
-    border:none;
-    color:#4f46e5;
-}
-
 nav ul{
     display:flex;
     list-style:none;
@@ -64,6 +54,7 @@ nav a:hover{
     background:#4338ca;
 }
 
+/* HERO */
 .hero{
     text-align:center;
     padding:100px 8%;
@@ -89,93 +80,58 @@ nav a:hover{
     font-size:18px;
 }
 
-.testimonials{
+/* WHO WE ARE */
+.about-section{
     display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:50px 8%;
+    align-items:center;
+    gap:50px;
+    padding:80px 8%;
     flex-wrap:wrap;
 }
-.card{
-    background:white;
-    width:320px;
-    padding:30px;
+
+.about-image{
+    flex:1;
+    min-width:300px;
+}
+
+.about-image img{
+    width:100%;
     border-radius:15px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
-.card img{
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    margin-bottom:15px;
+
+.about-text{
+    flex:1;
+    min-width:300px;
 }
-.card h3{
+
+.about-text h2{
+    font-size:30px;
+    color:#111827;
     margin-bottom:10px;
 }
-.card p{
-    color:#666;
-    line-height:1.6;
+
+.about-text .underline{
+    width:60px;
+    height:4px;
+    background:#4f46e5;
+    margin-bottom:20px;
+    border-radius:2px;
 }
 
-.why-us{
-    padding:60px;
-    background-color:white;
-    border-top:1px solid lightgray;
-}
-.why-us h2{
-    font-size:28px;
-    color:navy;
-    text-align:center;
-    margin-bottom:36px;
-}
-.features{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:24px;
-}
-.feature{
-    background-color:whitesmoke;
-    border-radius:12px;
-    padding:24px 20px;
-    border-left:4px solid blue;
-}
-.feature h3{
+.about-text p{
+    color:#555;
     font-size:16px;
-    color:darkblue;
-    margin-bottom:8px;
-}
-.feature p{
-    font-size:14px;
-    color:gray;
-    line-height:1.6;
+    margin-bottom:15px;
 }
 
-.cta{
-    text-align:center;
-    padding:70px 40px;
-    background-color:navy;
-}
-.cta h2{
-    font-size:28px;
-    color:white;
-    margin-bottom:12px;
-}
-.cta p{
-    font-size:15px;
-    color:lightgray;
-    margin-bottom:28px;
-}
-.cta .btn{
-    background-color:white;
-    color:navy;
-    padding:12px 30px;
-    font-size:15px;
-}
-.cta .btn:hover{
-    background-color:lightgray;
+.about-text .check{
+    color:#111827;
+    font-weight:500;
+    margin-bottom:10px;
 }
 
+/* FOOTER */
 footer{
     text-align:center;
     padding:20px;
@@ -188,38 +144,28 @@ footer{
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px){
     header{
-        flex-wrap:wrap;
         padding:15px 5%;
-        position: relative;
+        flex-wrap:nowrap;
     }
 
     .logo{
-        flex:1;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    nav{
-        width:100%;
-        display:none;
-        order: 3;
-    }
-
-    nav.open{
-        display:block;
+        font-size:20px;
     }
 
     nav ul{
-        flex-direction:column;
         gap:12px;
-        padding:12px 0;
-        text-align:center;
+        flex-wrap:nowrap;
     }
 
-    header > .btn{
-        display:none;
+    nav a{
+        font-size:13px;
+        white-space:nowrap;
+    }
+
+    .btn{
+        padding:8px 14px;
+        font-size:13px;
+        white-space:nowrap;
     }
 
     .hero{
@@ -232,28 +178,28 @@ footer{
         font-size:16px;
     }
 
-    .testimonials{
-        padding:40px 20px;
+    .about-section{
+        flex-direction:column;
+        padding:40px 5%;
+        gap:30px;
     }
-    .card{
-        width:100%;
-        max-width:340px;
-    }
+}
 
-    .why-us{
-        padding:40px 20px;
+@media(max-width:480px){
+    header{
+        padding:10px 4%;
     }
-    .features{
-        grid-template-columns:1fr;
+    .logo{
+        font-size:16px;
     }
-
-    .cta{
-        padding:50px 20px;
+    nav ul{
+        gap:6px;
     }
-    .cta h2{
-        font-size:24px;
+    nav a{
+        font-size:11px;
     }
-    .cta p{
-        font-size:14px;
+    .btn{
+        padding:6px 10px;
+        font-size:11px;
     }
 }
